@@ -5,27 +5,25 @@ const operatorList = document.querySelectorAll('.operator');
 const numberList = document.querySelectorAll('.number');
 const operatorC = document.querySelector('#operator-c');
 
+numberList.forEach(number => {
+    number.addEventListener('click', () => {
+        screen.value += number.innerText;
+    })
+
+});
+
 operatorList.forEach(operator => {
-    if(
-        !isNaN(operator.innerText) ||
-        operator.innerText === '+' ||
-        operator.innerText === '-' ||
-        operator.innerText === '*' ||
-        operator.innerText === '/' ||
-        operator.innerText === '.' 
-    ) {
-        operator.addEventListener('click', () => {
-            // console.log(operator.innerText);
-            screen.value += operator.innerText;
-        })
-    };
+    operator.addEventListener('click', () => {
+        let operatorValue = operator.innerText;
 
-    if((operator.innerText === '=')) {
-        operator.addEventListener('click', () => {
+        if(operatorValue !== '='){
+            screen.value += operatorValue;
+        }
+
+        if(operatorValue === '=') {
             getResult();
-        });
-    }
-
+        }
+    })
 });
 
 operatorC.addEventListener('click', () => {
@@ -33,5 +31,7 @@ operatorC.addEventListener('click', () => {
 })
 
 function getResult() {
-    screen.value = eval(screen.value);
+    let result = eval(screen.value);
+
+    screen.value = result;
 }

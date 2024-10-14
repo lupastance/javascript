@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 20px auto;
+    width: 20%;
+}
+
+span {
+    padding: 5px;
+    margin: 5px;
+    border:solid 1px black;
+    border-collapse: collapse;
+    display: inline-block;
+}
