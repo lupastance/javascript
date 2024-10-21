@@ -1,0 +1,93 @@
+:root {
+    --animation-wheel: rotate 3s linear infinite;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(244, 244, 244);
+    color: rgb(58, 58, 58);
+    font-family: system-ui;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: -3px -1px 4px #050807e0;
+}
+
+#logo {
+    width: 60px;
+    font-size: 40px;
+
+    animation: var(--animation-wheel);
+}
+
+#contenido {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 1px rgb(209, 209, 209);
+    box-shadow: inset -5px -5px 12px 0px #00000069;
+    text-align: center;
+}
+
+#modal-cookies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+    #modal-cookies-content {
+        margin: 15% auto;
+        width: 60%;
+        text-align: center;
+        padding: 40px;
+
+        font-size: 1.2em;
+    }
+
+        #modal-cookies h2 {
+            font-size: 4em;
+            animation: var(--animation-wheel);
+        }
+
+        #modal-cookies button {
+            background-color: rgb(230, 203, 113);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin: 0 20px
+
+        }
+
+.hide {
+    display: none;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        /* Comienza en 0 grados */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Termina en 360 grados */
+    }
+}
