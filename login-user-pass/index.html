@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Simulado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="step1" class="step active">
+            <h2>Ingresa tu nombre de usuario</h2>
+            <input type="text" id="username" placeholder="Correo electrónico" required>
+            <button onclick="nextStep()">Siguiente</button>
+        </div>
+
+        <div id="step2" class="step">
+            <h2>Ingresa tu contraseña</h2>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button onclick="login()">Iniciar Sesión</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
