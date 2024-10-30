@@ -1,0 +1,107 @@
+[
+    {
+        "nombre": "Pikachu",
+        "tipo": ["Eléctrico"],
+        "nivel_base": 5,
+        "HP": 35,
+        "habilidad_principal": "Electricidad estática"
+    },
+    {
+        "nombre": "Charmander",
+        "tipo": ["Fuego"],
+        "nivel_base": 5,
+        "HP": 39,
+        "habilidad_principal": "Mar llamas"
+    },
+    {
+        "nombre": "Squirtle",
+        "tipo": ["Agua"],
+        "nivel_base": 5,
+        "HP": 44,
+        "habilidad_principal": "Torrente"
+    },
+    {
+        "nombre": "Bulbasaur",
+        "tipo": ["Planta", "Veneno"],
+        "nivel_base": 5,
+        "HP": 45,
+        "habilidad_principal": "Espesura"
+    },
+    {
+        "nombre": "Jigglypuff",
+        "tipo": ["Normal", "Hada"],
+        "nivel_base": 5,
+        "HP": 115,
+        "habilidad_principal": "Gran encanto"
+    },
+    {
+        "nombre": "Meowth",
+        "tipo": ["Normal"],
+        "nivel_base": 5,
+        "HP": 40,
+        "habilidad_principal": "Recogida"
+    },
+    {
+        "nombre": "Psyduck",
+        "tipo": ["Agua"],
+        "nivel_base": 5,
+        "HP": 50,
+        "habilidad_principal": "Humedad"
+    },
+    {
+        "nombre": "Machop",
+        "tipo": ["Lucha"],
+        "nivel_base": 5,
+        "HP": 70,
+        "habilidad_principal": "Agallas"
+    },
+    {
+        "nombre": "Geodude",
+        "tipo": ["Roca", "Tierra"],
+        "nivel_base": 5,
+        "HP": 40,
+        "habilidad_principal": "Robustez"
+    },
+    {
+        "nombre": "Eevee",
+        "tipo": ["Normal"],
+        "nivel_base": 5,
+        "HP": 55,
+        "habilidad_principal": "Fuga"
+    },
+    {
+        "nombre": "Snorlax",
+        "tipo": ["Normal"],
+        "nivel_base": 5,
+        "HP": 160,
+        "habilidad_principal": "Inmunidad"
+    },
+    {
+        "nombre": "Mankey",
+        "tipo": ["Lucha"],
+        "nivel_base": 5,
+        "HP": 40,
+        "habilidad_principal": "Espíritu vital"
+    },
+    {
+        "nombre": "Abra",
+        "tipo": ["Psíquico"],
+        "nivel_base": 5,
+        "HP": 25,
+        "habilidad_principal": "Sincronía"
+    },
+    {
+        "nombre": "Gastly",
+        "tipo": ["Fantasma", "Veneno"],
+        "nivel_base": 5,
+        "HP": 30,
+        "habilidad_principal": "Levitación"
+    },
+    {
+        "nombre": "Onix",
+        "tipo": ["Roca", "Tierra"],
+        "nivel_base": 5,
+        "HP": 35,
+        "habilidad_principal": "Robustez"
+    }
+]
