@@ -27,12 +27,17 @@ function listPokemons(){
 
         pokemonListado.appendChild(pokemonListadoElement);
     });
-
 }
 
 function getPokemonByFilter(name){
     // Aplicamos el método filter para filtrar los elementos por la clave 'nombre'
     const pokeInfo = pokedex.filter(pokemon => pokemon.nombre === name)[0];
+    
+    // Vaciamos el input de búsqueda
+    pokemonFilterName.value = '';
+
+    // Situamos el cursor otra vez en el input del buscador por nombre
+    pokemonFilterName.focus();
 
     const avatar = document.querySelector('#pokemon-avatar');
     const pokemonName = document.querySelector('#pokemon-name');
@@ -51,16 +56,16 @@ function getPokemonByFilter(name){
     pokemonName.innerText = name;
 
     // Ponemos el 'HP' (la vida) del pokemon
-    pokemonHP.innerText += pokeInfo.HP;
+    pokemonHP.innerText = 'HP: ' + pokeInfo.HP;
 
     // Ponemos de qué tipo(s) es el pokemon
-    pokemonTipo.innerText += pokeInfo.tipo;
+    pokemonTipo.innerText = 'Tipo: ' + pokeInfo.tipo;
 
     // Establecemos el nivel que tiene el pokemon
-    pokemonNivel.innerText += pokeInfo.nivel_base;
+    pokemonNivel.innerText = 'Nivel: ' + pokeInfo.nivel_base;
 
     // Ponemos la habilidad principal del pokemon
-    pokemonHabilidadPrincipal.innerText += pokeInfo.habilidad_principal;
+    pokemonHabilidadPrincipal.innerText = 'Habilidad principal: ' + pokeInfo.habilidad_principal;
 }
 
 listPokemons();
@@ -68,11 +73,9 @@ getPokemonByFilter('Pikachu');
 
 
 buttonFilterPokemon.addEventListener('click', () => {
-    if(pokemonFilterName.value) {
-        getPokemonByFilter(pokemonFilterName.value)
-    }
-
-    else {
+    if (pokemonFilterName.value && names.includes(pokemonFilterName.value)) {
+        getPokemonByFilter(pokemonFilterName.value);
+    } else {
         alert('Por favor, introduce un nombre de Pokemon para buscar');
     }
 })

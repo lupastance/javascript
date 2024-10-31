@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/light.css">
     <title>🔴 Pokedex 🔴</title>
 </head>
 <body>
@@ -10,9 +16,7 @@
         <img src="img/pokedex-logo.webp" alt="">
         <ul>
             <li>
-                <a href="#">
-                    inicio
-                </a>
+                Buscar un Pokemon
             </li>
             <li>
                 <input type="text" name="" id="pokemon-filter-name" placeholder="Filtrar por nombre">
@@ -20,15 +24,15 @@
             </li>
         </ul>
     </header>
-    <aside>
-        <ul id="pokemon-listado"></ul>
-    </aside>
-
+    
     <section>
+        <aside>
+            <ul id="pokemon-listado"></ul>
+        </aside>
         <article id="content">
             <div id="content-header">
                 <img id="pokemon-avatar" src="" alt="">
-                <h2 id="pokemon-name">john doe</h2>
+                <h1 id="pokemon-name">john doe</h1>
             </div>
             <ul id="pokemon-description">
                 <li id="pokemon-hp">hp: </li>
