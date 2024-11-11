@@ -62,3 +62,14 @@ li {
     height: 200px;
     filter: drop-shadow(7px 7px 6px rgba(0, 0, 0, 0.5));
 }
+
+#pokemons-all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+.pokemon-info img {
+    width: 100px;
+}

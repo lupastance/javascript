@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/light.css">
+    <title>🔴 Pokedex 🔴</title>
+</head>
+<body>
+    <header>
+        <img src="img/pokedex-logo.webp" alt="">
+        <ul>
+            <li>
+                Buscar un Pokemon
+            </li>
+            <li>
+                <input type="text" name="" id="pokemon-filter-name" placeholder="Filtrar por nombre">
+                <button id="button-filter-pokemon">Filtrar</button>
+            </li>
+        </ul>
+    </header>
+    
+    <section>
+        <aside>
+            <ul id="pokemon-tipos"></ul>
+        </aside>
+        <article id="pokemons-all">
+            <div class="pokemon-data">
+                <div class="pokemon-info">
+                    <img src="img/pikachu.png" alt="Pikachu">
+                </div>
+                <p>Pikachu</p>
+                <span class="tipo">Rayo</span>
+            </div>
+            <div class="pokemon-data">
+                <div class="pokemon-info">
+                    <img src="img/pikachu.png" alt="Pikachu">
+                </div>
+                <p>Pikachu</p>
+                <span class="tipo">Rayo</span>
+            </div>
+            <div class="pokemon-data">
+                <div class="pokemon-info">
+                    <img src="img/pikachu.png" alt="Pikachu">
+                    <p>Pikachu</p>
+                    <span class="tipo">Rayo</span>
+                </div>
+            </div>
+            <div class="pokemon-data">
+                <div class="pokemon-info">
+                    <img src="img/pikachu.png" alt="Pikachu">
+                    <p>Pikachu</p>
+                    <span class="tipo">Rayo</span>
+                </div>
+            </div>
+            <div class="pokemon-data">
+                <div class="pokemon-info">
+                    <img src="img/pikachu.png" alt="Pikachu">
+                    <p>Pikachu</p>
+                    <span class="tipo">Rayo</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script type="module" src="./script/pokemon-filter.js"></script>
+</body>
+</html>
